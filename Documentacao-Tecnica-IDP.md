@@ -7,9 +7,9 @@ Este case simula a administração de um ambiente híbrido Azure DevOps com apli
 
 ---
 
-## ✅ CI/CD com Azure DevOps
+## CI/CD com Azure DevOps
 
-### 📁 Repositório
+### Repositório
 
 - **Nome:** Cased-de-teste-IDP
 - **Tipo:** Público (GitHub)
@@ -51,9 +51,9 @@ steps:
 
 ---
 
-## ⚙️ Infraestrutura como Código (IaC)
+## Infraestrutura como Código (IaC)
 
-### 📦 Terraform (App Service + Azure SQL)
+### Terraform (App Service + Azure SQL)
 
 ```hcl
 provider "azurerm" {
@@ -88,9 +88,9 @@ resource "azurerm_app_service" "app" {
 
 ---
 
-## 📈 Monitoramento e Alertas
+## Monitoramento e Alertas
 
-### 🔍 Azure Monitor + Log Analytics
+### Azure Monitor + Log Analytics
 
 - Monitorar uso de CPU, memória e armazenamento de VMs (Windows/Linux).
 - Monitorar disponibilidade de Azure SQL.
@@ -99,7 +99,7 @@ resource "azurerm_app_service" "app" {
   - Uso > 80% de CPU
   - Conexão perdida com SQL
 
-### 📊 Dashboard Sugerido
+### Dashboard Sugerido
 
 - Painel com:
   - Estado das VMs
@@ -108,32 +108,32 @@ resource "azurerm_app_service" "app" {
 
 ---
 
-## 📊 Escalabilidade
+## Escalabilidade
 
-### ☁️ App Service
+### App Service
 
 - Configurar autoscale baseado em uso de CPU (ex: >70%).
 - Permitir instâncias mínimas: 1 / máximas: 3
 
-### 🧩 SQL Database
+### SQL Database
 
 - Usar **Elastic Pools** para ambientes com múltiplos bancos.
 
-### 🧠 VM Scale Sets
+### VM Scale Sets
 
 - Para servidores Windows/Linux personalizados com base em imagem.
 
 ---
 
-## 🔐 Segurança e Compliance
+## Segurança e Compliance
 
-### 🔑 Azure Key Vault
+### Azure Key Vault
 
 - Armazenar:
   - Connection strings
   - Secrets de deploy (CI/CD)
 
-### 👥 RBAC – Role-Based Access Control
+### RBAC – Role-Based Access Control
 
 - Time de Dev: `Contributor` no grupo Dev
 - Time de Ops: `Reader` + `Monitoring Reader` em Produção
@@ -141,10 +141,4 @@ resource "azurerm_app_service" "app" {
 
 ---
 
-## 📌 Considerações Finais
 
-- Pipeline funcional (com erro de paralelismo simulado)
-- Estrutura preparada para execução assim que granted
-- Todos os componentes estão prontos para testes reais
-
-Caso deseje, posso gerar os prints simulados das telas do DevOps + Portal Azure para compor a entrega final.
