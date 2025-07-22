@@ -1,7 +1,7 @@
 
-## 📄 Documentação Técnica – Case de Teste IDP Tecnologia (Projeto .NET)
+## Documentação Técnica – Case de Teste IDP Tecnologia (Projeto .NET)
 
-### 🔹 Visão Geral
+### Visão Geral
 
 Este case simula a administração de um ambiente híbrido Azure DevOps com aplicações .NET (API/Web), utilizando práticas de CI/CD, infraestrutura como código, escalabilidade, monitoramento e segurança.
 
